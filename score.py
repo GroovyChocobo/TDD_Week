@@ -1,17 +1,4 @@
 def add_points(game, amount):
-    pass
-
-def apply_multiplier(game, multiplier):
-    pass
-
-def reset_score(game):
-    pass
-
-def is_high_score(game, threshold):
-    pass
-
-
-def add_points(game, amount):
     if not isinstance(amount, int) or isinstance(amount, bool) or amount <= 0:
         raise ValueError("amount must be a positive integer")
     if not game["active"]:
