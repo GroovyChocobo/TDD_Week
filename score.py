@@ -31,3 +31,8 @@ def reset_score(game):
     game["score"] = 0
     game["multiplier"] = 1
     return game
+
+def is_high_score(game, threshold):
+    if threshold < 0:
+        raise ValueError("threshold must be >= 0")
+    return game["score"] > threshold
